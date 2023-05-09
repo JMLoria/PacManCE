@@ -4,14 +4,14 @@
 		"generator" : 
 		{
 			"multiConfig" : false,
-			"name" : "Ninja"
+			"name" : "Unix Makefiles"
 		},
 		"paths" : 
 		{
-			"cmake" : "/home/jose/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/bin/cmake",
-			"cpack" : "/home/jose/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/bin/cpack",
-			"ctest" : "/home/jose/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/bin/ctest",
-			"root" : "/home/jose/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25"
+			"cmake" : "/snap/clion/235/bin/cmake/linux/x64/bin/cmake",
+			"cpack" : "/snap/clion/235/bin/cmake/linux/x64/bin/cpack",
+			"ctest" : "/snap/clion/235/bin/cmake/linux/x64/bin/ctest",
+			"root" : "/snap/clion/235/bin/cmake/linux/x64/share/cmake-3.25"
 		},
 		"version" : 
 		{
@@ -26,7 +26,7 @@
 	"objects" : 
 	[
 		{
-			"jsonFile" : "codemodel-v2-00854af64a9e75619947.json",
+			"jsonFile" : "codemodel-v2-58880ce439431e74a7d2.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
@@ -35,7 +35,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-106530a4306f2e1bd877.json",
+			"jsonFile" : "cache-v2-dc765f66820b248077c7.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,7 +44,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-e8fcb7cab7b702738bd0.json",
+			"jsonFile" : "cmakeFiles-v1-9f99c22922d6ab5a6f2a.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -66,7 +66,7 @@
 	{
 		"cache-v2" : 
 		{
-			"jsonFile" : "cache-v2-106530a4306f2e1bd877.json",
+			"jsonFile" : "cache-v2-dc765f66820b248077c7.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -76,7 +76,7 @@
 		},
 		"cmakeFiles-v1" : 
 		{
-			"jsonFile" : "cmakeFiles-v1-e8fcb7cab7b702738bd0.json",
+			"jsonFile" : "cmakeFiles-v1-9f99c22922d6ab5a6f2a.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -86,7 +86,7 @@
 		},
 		"codemodel-v2" : 
 		{
-			"jsonFile" : "codemodel-v2-00854af64a9e75619947.json",
+			"jsonFile" : "codemodel-v2-58880ce439431e74a7d2.json",
 			"kind" : "codemodel",
 			"version" : 
 			{

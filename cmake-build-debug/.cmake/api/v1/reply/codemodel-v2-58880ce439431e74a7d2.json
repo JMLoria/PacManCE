@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "PacManCE::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-PacManCE-Debug-846cd19f46cc39c695d9.json",
+					"jsonFile" : "target-PacManCE-Debug-d12b1d6c6da92d06398b.json",
 					"name" : "PacManCE",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/jose/Desktop/TEC/CE2103/PacManCE/cmake-build-debug",
-		"source" : "/home/jose/Desktop/TEC/CE2103/PacManCE"
+		"build" : "/home/skg/PacManCE/cmake-build-debug",
+		"source" : "/home/skg/PacManCE"
 	},
 	"version" : 
 	{
