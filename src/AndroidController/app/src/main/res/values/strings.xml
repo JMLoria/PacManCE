@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Android Controller</string>
+
+    <string name="Level">Level: </string>
+    <string name="Points">Points: </string>
+    <string name="Lives">Lives: </string>
+
+    <string name="btnUp"> Up </string>
+    <string name="btnDown"> Down </string>
+    <string name="btnLeft"> Left</string>
+    <string name="btnRight"> Right </string>
+</resources>
