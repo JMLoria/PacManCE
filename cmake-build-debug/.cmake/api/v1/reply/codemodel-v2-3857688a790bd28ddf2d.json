@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/skg/PacManCE/cmake-build-debug",
-		"source" : "/home/skg/PacManCE"
+		"build" : "/home/jose/Desktop/TEC/CE2103/PacManCE/cmake-build-debug",
+		"source" : "/home/jose/Desktop/TEC/CE2103/PacManCE"
 	},
 	"version" : 
 	{
