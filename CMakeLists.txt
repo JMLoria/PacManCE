@@ -3,4 +3,10 @@ project(PacManCE)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(PacManCE src/main.cpp src/PlayState.cpp src/PlayState.h src/MainMenuState.cpp src/MainMenuState.h src/CreditsState.cpp src/CreditsState.h src/Player.cpp src/Player.h src/Enemy.cpp src/Enemy.h src/Tile.cpp src/Tile.h)
+find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)
+
+add_executable( PacManCE src/main.cpp src/PlayState.cpp src/PlayState.h src/MainMenuState.cpp 
+                src/MainMenuState.h src/CreditsState.cpp src/CreditsState.h src/Player.cpp 
+                src/Player.h src/Enemy.cpp src/Enemy.h src/Tile.cpp src/Tile.h)
+
+target_link_libraries(PacManCE sfml-graphics sfml-audio)
