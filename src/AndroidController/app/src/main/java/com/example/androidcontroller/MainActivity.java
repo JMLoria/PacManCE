@@ -3,25 +3,21 @@ package com.example.androidcontroller;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.hardware.*;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  {
 
-    private TextView txtLevel;
-    private TextView txtPoints;
-    private TextView txtLives;
+    private TextView txtLevel, txtPoints, txtLives, txtTest;
+
+    private int level, points, lives;
+
     private EditText txtIP;
 
-    private int level;
-    private int points;
-    private int lives;
-
-    private TextView txtTest;
-
-    public String move;
+    public String move = "";
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -44,20 +40,24 @@ public class MainActivity extends AppCompatActivity {
     public void moveUp(View view){
         move = "W";
         txtTest.setText(move);
+        move = "";
     }
 
     public void moveDown(View view){
         move = "S";
         txtTest.setText(move);
+        move = "";
     }
 
     public void moveLeft(View view){
         move = "A";
         txtTest.setText(move);
+        move = "";
     }
 
     public void moveRight(View view){
         move = "D";
         txtTest.setText(move);
+        move = "";
     }
 }

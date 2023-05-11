@@ -1,7 +1,7 @@
 // Integrated C++ Libs
 #include <iostream>
 
-// All of the game's states
+// All the game's states
 #include "MainMenuState.h"
 #include "CreditsState.h"
 #include "PlayState.h"
