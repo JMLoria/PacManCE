@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/PacManCE.dir/src/main.cpp.o CMakeFiles/PacManCE.dir/src/PlayState.cpp.o CMakeFiles/PacManCE.dir/src/MainMenuState.cpp.o CMakeFiles/PacManCE.dir/src/CreditsState.cpp.o CMakeFiles/PacManCE.dir/src/Player.cpp.o CMakeFiles/PacManCE.dir/src/Enemy.cpp.o CMakeFiles/PacManCE.dir/src/Tile.cpp.o -o PacManCE 
