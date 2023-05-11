@@ -11,8 +11,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements SensorEventListener {
-
+public class MainActivity extends AppCompatActivity {
     private TextView txtLevel, txtPoints, txtLives, txtTest;
 
     private int level, points, lives;
@@ -26,9 +25,44 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        SensorManager sensorManager = (SensorManager) getBaseContext().getSystemService(Context.SENSOR_SERVICE);
-        Sensor sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
-        sensorManager.registerListener(this, sensor, SensorManager.SENSOR_DELAY_FASTEST);
+        SensorManager sm = (SensorManager) getSystemService(Context.SENSOR_SERVICE); //Accesa a los sensores
+        Sensor s = sm.getDefaultSensor(Sensor.TYPE_ACCELEROMETER); //Accede al acelerometro (giroscopio)
+        if (s == null){
+            System.out.println("El celular no posee el sensor");
+        }
+
+        //Codigo que se genera por el evento del acelerometro
+        SensorEventListener event = new SensorEventListener() {
+            @Override
+            public void onSensorChanged(SensorEvent _event) {
+                //Codigo que se genera por el evento del acelerometro
+                float X = _event.values[0], Z = _event.values[2];
+                if (X < -4) {
+                    move = "D";
+                    txtTest.setText(move);
+                    move = "";
+                } else if (X > 4) {
+                    move = "A";
+                    txtTest.setText(move);
+                    move = "";
+                } else if (Z < -4) {
+                    move = "S";
+                    txtTest.setText(move);
+                    move = "";
+                } else if (Z > 4) {
+                    move = "W";
+                    txtTest.setText(move);
+                    move = "";
+                }
+            }
+
+            @Override
+            public void onAccuracyChanged(Sensor sensor, int i) {
+
+            }
+        };
+
+        sm.registerListener(event, s, SensorManager.SENSOR_DELAY_NORMAL);
 
         level = 1;
         points = 250;
@@ -64,32 +98,5 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         move = "D";
         txtTest.setText(move);
         move = "";
-    }
-    @Override
-    public void onSensorChanged(SensorEvent sensorEvent) {
-        float X = sensorEvent.values[0], Z = sensorEvent.values[2];
-        if(X > 15){
-            move = "S";
-            txtTest.setText(move);
-            move = "";
-        } else if(X < -15){
-            move = "W";
-            txtTest.setText(move);
-            move = "";
-        }
-        if(Z > 15){
-            move = "A";
-            txtTest.setText(move);
-            move = "";
-        } else if(Z < -15){
-            move = "D";
-            txtTest.setText(move);
-            move = "";
-        }
-    }
-
-    @Override
-    public void onAccuracyChanged(Sensor sensor, int i) {
-
     }
 }
