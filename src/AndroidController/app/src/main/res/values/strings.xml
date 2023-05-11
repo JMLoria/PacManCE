@@ -9,4 +9,6 @@
     <string name="btnDown"> Down </string>
     <string name="btnLeft"> Left</string>
     <string name="btnRight"> Right </string>
+
+    <string name="btnConnect"> Connect Android </string>
 </resources>

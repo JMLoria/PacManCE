@@ -2,8 +2,10 @@ package com.example.androidcontroller;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -11,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView txtLevel;
     private TextView txtPoints;
     private TextView txtLives;
+    private EditText txtIP;
 
     private int level;
     private int points;
@@ -20,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     public String move;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         txtPoints = findViewById(R.id.txtPoints);
         txtLives = findViewById(R.id.txtLives);
         txtTest = findViewById(R.id.txtTest);
+        txtIP = findViewById(R.id.editTxtIP);
 
     }
 

@@ -99,8 +99,10 @@
             android:text="@string/btnUp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.419" />
 
         <Button
             android:id="@+id/btnLeft"
@@ -146,6 +148,27 @@
             app:layout_constraintEnd_toStartOf="@+id/btnRight"
             app:layout_constraintStart_toEndOf="@+id/btnLeft"
             app:layout_constraintTop_toBottomOf="@+id/btnUp" />
+
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="@string/btnConnect"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/editTxtIP"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="12dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/btnConnect"
+            app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
