@@ -129,30 +129,6 @@ PacManCE/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/build
 .PHONY : PacManCE/fast
 
-src/CreditsState.o: src/CreditsState.cpp.o
-.PHONY : src/CreditsState.o
-
-# target to build an object file
-src/CreditsState.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/CreditsState.cpp.o
-.PHONY : src/CreditsState.cpp.o
-
-src/CreditsState.i: src/CreditsState.cpp.i
-.PHONY : src/CreditsState.i
-
-# target to preprocess a source file
-src/CreditsState.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/CreditsState.cpp.i
-.PHONY : src/CreditsState.cpp.i
-
-src/CreditsState.s: src/CreditsState.cpp.s
-.PHONY : src/CreditsState.s
-
-# target to generate assembly for a file
-src/CreditsState.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/CreditsState.cpp.s
-.PHONY : src/CreditsState.cpp.s
-
 src/Enemy.o: src/Enemy.cpp.o
 .PHONY : src/Enemy.o
 
@@ -249,6 +225,30 @@ src/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/Player.cpp.s
 .PHONY : src/Player.cpp.s
 
+src/Test-JM/testConection.o: src/Test-JM/testConection.cpp.o
+.PHONY : src/Test-JM/testConection.o
+
+# target to build an object file
+src/Test-JM/testConection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/Test-JM/testConection.cpp.o
+.PHONY : src/Test-JM/testConection.cpp.o
+
+src/Test-JM/testConection.i: src/Test-JM/testConection.cpp.i
+.PHONY : src/Test-JM/testConection.i
+
+# target to preprocess a source file
+src/Test-JM/testConection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/Test-JM/testConection.cpp.i
+.PHONY : src/Test-JM/testConection.cpp.i
+
+src/Test-JM/testConection.s: src/Test-JM/testConection.cpp.s
+.PHONY : src/Test-JM/testConection.s
+
+# target to generate assembly for a file
+src/Test-JM/testConection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/Test-JM/testConection.cpp.s
+.PHONY : src/Test-JM/testConection.cpp.s
+
 src/Tile.o: src/Tile.cpp.o
 .PHONY : src/Tile.o
 
@@ -306,9 +306,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... PacManCE"
-	@echo "... src/CreditsState.o"
-	@echo "... src/CreditsState.i"
-	@echo "... src/CreditsState.s"
 	@echo "... src/Enemy.o"
 	@echo "... src/Enemy.i"
 	@echo "... src/Enemy.s"
@@ -321,6 +318,9 @@ help:
 	@echo "... src/Player.o"
 	@echo "... src/Player.i"
 	@echo "... src/Player.s"
+	@echo "... src/Test-JM/testConection.o"
+	@echo "... src/Test-JM/testConection.i"
+	@echo "... src/Test-JM/testConection.s"
 	@echo "... src/Tile.o"
 	@echo "... src/Tile.i"
 	@echo "... src/Tile.s"
