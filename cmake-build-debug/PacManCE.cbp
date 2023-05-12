@@ -106,6 +106,9 @@
 		<Unit filename="/home/jose/Desktop/TEC/CE2103/PacManCE/src/Player.h">
 			<Option target="PacManCE"/>
 		</Unit>
+		<Unit filename="/home/jose/Desktop/TEC/CE2103/PacManCE/src/Test-JM/testConection.cpp">
+			<Option target="PacManCE"/>
+		</Unit>
 		<Unit filename="/home/jose/Desktop/TEC/CE2103/PacManCE/src/Tile.cpp">
 			<Option target="PacManCE"/>
 		</Unit>

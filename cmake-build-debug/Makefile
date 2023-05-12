@@ -225,6 +225,30 @@ src/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/Player.cpp.s
 .PHONY : src/Player.cpp.s
 
+src/Test-JM/testConection.o: src/Test-JM/testConection.cpp.o
+.PHONY : src/Test-JM/testConection.o
+
+# target to build an object file
+src/Test-JM/testConection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/Test-JM/testConection.cpp.o
+.PHONY : src/Test-JM/testConection.cpp.o
+
+src/Test-JM/testConection.i: src/Test-JM/testConection.cpp.i
+.PHONY : src/Test-JM/testConection.i
+
+# target to preprocess a source file
+src/Test-JM/testConection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/Test-JM/testConection.cpp.i
+.PHONY : src/Test-JM/testConection.cpp.i
+
+src/Test-JM/testConection.s: src/Test-JM/testConection.cpp.s
+.PHONY : src/Test-JM/testConection.s
+
+# target to generate assembly for a file
+src/Test-JM/testConection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/Test-JM/testConection.cpp.s
+.PHONY : src/Test-JM/testConection.cpp.s
+
 src/Tile.o: src/Tile.cpp.o
 .PHONY : src/Tile.o
 
@@ -294,6 +318,9 @@ help:
 	@echo "... src/Player.o"
 	@echo "... src/Player.i"
 	@echo "... src/Player.s"
+	@echo "... src/Test-JM/testConection.o"
+	@echo "... src/Test-JM/testConection.i"
+	@echo "... src/Test-JM/testConection.s"
 	@echo "... src/Tile.o"
 	@echo "... src/Tile.i"
 	@echo "... src/Tile.s"
