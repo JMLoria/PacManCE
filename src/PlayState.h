@@ -10,10 +10,11 @@
 // Data structures
 
 // Gameplay classes
-#include <Player.h>
+#include "Player.h"
 //#include <Enemy.h>
 //#include <Tile.h>
 
+// Namespaces for convenience sake
 using namespace sf;
 
 class PlayState {
@@ -33,8 +34,14 @@ private:
     int curLevel[50][50]; // Stores level data
     // not yet, i need a vector or smth // Stores sprites
 
+    // Inputs
+    bool pressUp;
+    bool pressDown;
+    bool pressLeft;
+    bool pressRight;
+
     // Player and some other variables
-    //Player player;
+    Player* player;
     int curScore;
     
     // Enemies separated because easier to deal with
@@ -54,8 +61,11 @@ public:
     virtual ~PlayState();
 
     // Functions
+    void checkInput();
     void updateLevelCollisions();
     void updateEnemyCollisions();
+    void updatePlayerMovement();
+    void updateEnemiesMovement();
 
     // Essential Functions
     void update();

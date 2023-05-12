@@ -6,9 +6,6 @@
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
-/// @brief 
-/// @param target 
-/// @param pageName 
 void MainMenuState::initVariables(RenderWindow *target, String *pageName){
     
     // Setting up the values
@@ -23,15 +20,11 @@ void MainMenuState::initVariables(RenderWindow *target, String *pageName){
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
-/// @brief 
-/// @param target 
-/// @param pageName 
 MainMenuState::MainMenuState(RenderWindow *target, String *pageName){
 
     this->initVariables(target, pageName);
 }
 
-/// @brief 
 MainMenuState::~MainMenuState(){
 
     delete this->pageName;
@@ -44,7 +37,6 @@ MainMenuState::~MainMenuState(){
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
-/// @brief 
 void MainMenuState::checkInputs(){
 
 }
@@ -55,13 +47,11 @@ void MainMenuState::checkInputs(){
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
-/// @brief 
 void MainMenuState::update(){
 
     this->pollEvents();
 }
 
-/// @brief 
 void MainMenuState::draw(){
 
     // Clears the previous frame
@@ -71,7 +61,6 @@ void MainMenuState::draw(){
     this->window->display();
 }
 
-/// @brief 
 void MainMenuState::pollEvents(){
 
     while (this->window->pollEvent(this->ev)){

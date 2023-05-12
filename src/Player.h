@@ -8,6 +8,7 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
 
+// Namespaces for convenience sake
 using namespace sf;
 
 class Player {
@@ -28,17 +29,22 @@ private:
 
     // Logic
 
+    // Debug function
+    void initShape(int x, int y);
+
     //Private functions
     void initTexture();
     void initSprite();
 
 public:
 
+    // Debug stuff
+    CircleShape rect;
+
     // Constructor and Destructor
-    Player();
+    Player(int x, int y);
     virtual ~Player();
 
-    // Functions
 
     // Essential Functions
     void update();
