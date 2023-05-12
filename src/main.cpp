@@ -6,8 +6,8 @@
 
 // All the game's states
 #include "MainMenuState.h"
-#include "CreditsState.h"
 #include "PlayState.h"
+#include "GameOverState.h"
 
 // Namespaces for convenience sake
 //using namespace std;
@@ -24,42 +24,70 @@ int main() {
 
     // Here is the actual window
     RenderWindow window(VideoMode(1280, 720), "CE-Man", Style::Close | Style::Titlebar);
+    
+    // Window settings
     window.setFramerateLimit(60);
+    window.setVerticalSyncEnabled(false);
+
+    // State controllers
     String pageName = "main-menu";
+    int curLevel = 1;
+    bool inMainMenu = false;
+    bool inPlayState = false;
+    bool inGameOver = false;
 
     // The different game states :)
     MainMenuState mainMenu(&window, &pageName);
-    CreditsState credits(&window, &pageName);
     PlayState game(&window, &pageName);
-    // GameOverState gameOver(&window, &pageName);
+    GameOverState gameOver(&window, &pageName);
 
-    // Game loop :3
+/*
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   GAME LOOP
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
     while (window.isOpen()){
 
-        // Checking which page we're in (would use a switch case, but it doesn't let me)
+        /*
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                          MAIN MENU CODE
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        */
         if (pageName == "main-menu"){
+
+            if (!inMainMenu){
+
+                // Previous States
+                inPlayState = false;
+
+                // Current State
+                inMainMenu = true;
+                mainMenu = *new MainMenuState(&window, &pageName);
+            }
 
             mainMenu.update();
             mainMenu.draw();
         }
 
-        if (pageName == "credits"){
-
-            credits.update();
-            credits.draw();
-        }
-
+        /*
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                         PLAY STATE CODE
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        */
         if (pageName == "play-state"){
+
+            if (!inPlayState){
+
+                // Previous States
+                inMainMenu = false;
+
+                // Current State
+                inPlayState = true;
+                game = *new PlayState(&window, &pageName);
+            }
 
             game.update();
             game.draw();
         }
-
-//        if (pageName == "game-over"){
-//
-//
-//        }
-
     }
-
 }

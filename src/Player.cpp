@@ -6,20 +6,26 @@
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
-/// @brief 
+void Player::initShape(int x, int y){
+
+    this->rect.setRadius(15);
+    this->rect.setFillColor(Color::Yellow);
+
+    this->rect.setPosition(x, y);
+}
+
 void Player::initTexture(){
 
     // Loading texture from file
-    if(this->texture.loadFromFile("file name")){
+    if(this->textureSheet.loadFromFile("file name")){
 
         std::cout << "ERROR::PLAYER::INITTEXTURE:: Could not load sprite" << std::endl;
     }
 }
 
-/// @brief 
 void Player::initSprite(){
 
-    this->sprite.setTexture(this->texture);
+    this->sprite.setTexture(this->textureSheet);
 }
 
 /*
@@ -28,24 +34,19 @@ void Player::initSprite(){
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
-/// @brief 
-Player::Player(){
+Player::Player(int x, int y){
+
+    // Debugging stuff
+    this->initShape(x, y);
 
     // sets up the sprites of the character
     this->initTexture();
     this->initSprite();
 }
 
-/// @brief 
 Player::~Player(){
 
 }
-
-/*
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                    FUNCTIONS
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-*/
 
 /*
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -53,13 +54,11 @@ Player::~Player(){
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
-/// @brief 
 void Player::update()
 {
 }
 
-/// @brief 
-/// @param target 
-void Player::draw(RenderTarget *target)
-{
+void Player::draw(RenderTarget *target){
+
+    target->draw(this->rect);
 }

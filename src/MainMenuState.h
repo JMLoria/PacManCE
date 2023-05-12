@@ -9,6 +9,7 @@
 #include <SFML/System.hpp>
 #include <SFML/System.hpp>
 
+// Namespaces for convenience sake
 using namespace sf;
 
 class MainMenuState {
