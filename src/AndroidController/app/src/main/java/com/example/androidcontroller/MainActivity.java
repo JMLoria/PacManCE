@@ -47,16 +47,19 @@ public class MainActivity extends AppCompatActivity {
             public void onSensorChanged(SensorEvent _event) {
                 //Codigo que se genera por el evento del acelerometro
                 float X = _event.values[0], Z = _event.values[2];
+//                System.out.println("Eje x: " + X);
+//                System.out.println("Eje y: " + _event.values[1]);
+//                System.out.println("Eje z: " + Z);
                 if (X < -4) {
                     move = "D";
                     txtTest.setText(move);
                 } else if (X > 4) {
                     move = "A";
                     txtTest.setText(move);
-                } else if (Z < -4) {
+                } else if (Z < -6) {
                     move = "S";
                     txtTest.setText(move);
-                } else if (Z > 4) {
+                } else if (Z > 6) {
                     move = "W";
                     txtTest.setText(move);
                 }
