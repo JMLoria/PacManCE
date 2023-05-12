@@ -1,6 +1,8 @@
 #ifndef PACMANCE_MAINMENUSTATE_H
 #define PACMANCE_MAINMENUSTATE_H
 
+#include <iostream>
+
 // SFML Libraries
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
@@ -15,30 +17,25 @@ private:
 
     // Window target for rendering
     RenderWindow* window;
+    String* pageName;
     Event ev;
 
-    // Options variables
-    String options;
-    int curSelected;
-    String curOption;
-
-    // Graphics
+    // Graphics and preparation
     Font font;
-    // Sprite for the Logo
-    // 
+    std::map<String, Texture*> textures;
 
     // Private functions
-    void initVariables();
+    void initTextures();
+    void initVariables(RenderWindow *target, String *pageName);
 
 public:
 
     // Constructor and Destructor
-    MainMenuState(RenderWindow *target);
+    MainMenuState(RenderWindow *target, String *pageName);
     virtual ~MainMenuState();
 
     // Functions
     void checkInputs();
-    void changeSelection(int dir);
 
     // Essential functions
     void update();

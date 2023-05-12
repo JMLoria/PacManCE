@@ -1,4 +1,4 @@
-# Install script for directory: /home/jose/Desktop/TEC/CE2103/PacManCE
+# Install script for directory: /home/franco/pac-man/PacManCE
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/jose/Desktop/TEC/CE2103/PacManCE/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/franco/pac-man/PacManCE/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -7,15 +7,13 @@
 */
 
 /// @brief 
-void MainMenuState::initVariables(){
+/// @param target 
+/// @param pageName 
+void MainMenuState::initVariables(RenderWindow *target, String *pageName){
     
-    // Changing the window depending on where you are
-    this->window->setTitle("CE-Man - Main Menu");
-
-    // Menu logic variables
-    this->curSelected = 0;
-    // this->options = ["play", "credits"];
-    this->curOption = options[this->curSelected];
+    // Setting up the values
+    this->window = target;
+    this->pageName = pageName;
 
 }
 
@@ -25,17 +23,18 @@ void MainMenuState::initVariables(){
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
-/// @brief
-/// @param target
-MainMenuState::MainMenuState(RenderWindow *target){
+/// @brief 
+/// @param target 
+/// @param pageName 
+MainMenuState::MainMenuState(RenderWindow *target, String *pageName){
 
-    this->window = target;
-    this->initVariables();
+    this->initVariables(target, pageName);
 }
 
 /// @brief 
 MainMenuState::~MainMenuState(){
 
+    delete this->pageName;
     delete this->window;
 }
 
@@ -47,12 +46,6 @@ MainMenuState::~MainMenuState(){
 
 /// @brief 
 void MainMenuState::checkInputs(){
-
-}
-
-/// @brief 
-/// @param dir 
-void MainMenuState::changeSelection(int dir){
 
 }
 
@@ -94,8 +87,14 @@ void MainMenuState::pollEvents(){
                     this->window->close();
                 }
 
-                break;
+                if (this->ev.key.code == Keyboard::Enter || this->ev.key.code == Keyboard::Space){
+                        
+                        std::cout << "Changing state!" << std::endl;
+                        String* reference = this->pageName;
+                        *reference = "play-state";
+                    }
 
+                break;
         }
     }
 }

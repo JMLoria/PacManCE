@@ -1,13 +1,16 @@
 // Integrated C++ Libs
 #include <iostream>
 
+// SFML Libs
+#include <SFML/Window.hpp>
+
 // All the game's states
 #include "MainMenuState.h"
 #include "CreditsState.h"
 #include "PlayState.h"
 
 // Namespaces for convenience sake
-using namespace std;
+//using namespace std;
 using namespace sf;
 
 /*
@@ -22,7 +25,7 @@ int main() {
     // Here is the actual window
     RenderWindow window(VideoMode(1280, 720), "CE-Man", Style::Close | Style::Titlebar);
     window.setFramerateLimit(60);
-    string pageName = "main-menu";
+    String pageName = "main-menu";
 
     // The different game states :)
     MainMenuState mainMenu(&window, &pageName);
@@ -48,15 +51,14 @@ int main() {
 
         if (pageName == "play-state"){
 
-
             game.update();
             game.draw();
         }
 
-        if (pageName == "game-over"){
-
-
-        }
+//        if (pageName == "game-over"){
+//
+//
+//        }
 
     }
 
