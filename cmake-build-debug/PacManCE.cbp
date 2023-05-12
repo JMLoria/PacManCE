@@ -82,12 +82,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/jose/Desktop/TEC/CE2103/PacManCE/src/CreditsState.cpp">
-			<Option target="PacManCE"/>
-		</Unit>
-		<Unit filename="/home/jose/Desktop/TEC/CE2103/PacManCE/src/CreditsState.h">
-			<Option target="PacManCE"/>
-		</Unit>
 		<Unit filename="/home/jose/Desktop/TEC/CE2103/PacManCE/src/Enemy.cpp">
 			<Option target="PacManCE"/>
 		</Unit>

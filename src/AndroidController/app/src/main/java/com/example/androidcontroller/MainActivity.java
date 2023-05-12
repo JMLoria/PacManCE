@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.content.pm.ActivityInfo;
 import android.hardware.*;
 import android.os.Bundle;
 import android.view.View;
@@ -16,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     private int level, points, lives;
 
-    private EditText txtIP;
+    private EditText editIP;
 
     public String move = "";
 
@@ -25,6 +24,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        level = 1;
+        points = 250;
+        lives = 3;
+
+        txtLevel = findViewById(R.id.txtLevel);
+        txtPoints = findViewById(R.id.txtPoints);
+        txtLives = findViewById(R.id.txtLives);
+        txtTest = findViewById(R.id.txtTest);
+        editIP = findViewById(R.id.editIP);
+
         SensorManager sm = (SensorManager) getSystemService(Context.SENSOR_SERVICE); //Accesa a los sensores
         Sensor s = sm.getDefaultSensor(Sensor.TYPE_ACCELEROMETER); //Accede al acelerometro (giroscopio)
         if (s == null){
@@ -40,19 +50,15 @@ public class MainActivity extends AppCompatActivity {
                 if (X < -4) {
                     move = "D";
                     txtTest.setText(move);
-                    move = "";
                 } else if (X > 4) {
                     move = "A";
                     txtTest.setText(move);
-                    move = "";
                 } else if (Z < -4) {
                     move = "S";
                     txtTest.setText(move);
-                    move = "";
                 } else if (Z > 4) {
                     move = "W";
                     txtTest.setText(move);
-                    move = "";
                 }
             }
 
@@ -62,41 +68,26 @@ public class MainActivity extends AppCompatActivity {
             }
         };
 
-        sm.registerListener(event, s, SensorManager.SENSOR_DELAY_NORMAL);
-
-        level = 1;
-        points = 250;
-        lives = 3;
-
-        txtLevel = findViewById(R.id.txtLevel);
-        txtPoints = findViewById(R.id.txtPoints);
-        txtLives = findViewById(R.id.txtLives);
-        txtTest = findViewById(R.id.txtTest);
-        txtIP = findViewById(R.id.editTxtIP);
-
+        sm.registerListener(event, s, SensorManager.SENSOR_DELAY_GAME);
     }
 
     public void moveUp(View view){
         move = "W";
         txtTest.setText(move);
-        move = "";
     }
 
     public void moveDown(View view){
         move = "S";
         txtTest.setText(move);
-        move = "";
     }
 
     public void moveLeft(View view){
         move = "A";
         txtTest.setText(move);
-        move = "";
     }
 
     public void moveRight(View view){
         move = "D";
         txtTest.setText(move);
-        move = "";
     }
 }

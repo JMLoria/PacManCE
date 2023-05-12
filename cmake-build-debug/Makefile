@@ -129,30 +129,6 @@ PacManCE/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/build
 .PHONY : PacManCE/fast
 
-src/CreditsState.o: src/CreditsState.cpp.o
-.PHONY : src/CreditsState.o
-
-# target to build an object file
-src/CreditsState.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/CreditsState.cpp.o
-.PHONY : src/CreditsState.cpp.o
-
-src/CreditsState.i: src/CreditsState.cpp.i
-.PHONY : src/CreditsState.i
-
-# target to preprocess a source file
-src/CreditsState.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/CreditsState.cpp.i
-.PHONY : src/CreditsState.cpp.i
-
-src/CreditsState.s: src/CreditsState.cpp.s
-.PHONY : src/CreditsState.s
-
-# target to generate assembly for a file
-src/CreditsState.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/CreditsState.cpp.s
-.PHONY : src/CreditsState.cpp.s
-
 src/Enemy.o: src/Enemy.cpp.o
 .PHONY : src/Enemy.o
 
@@ -306,9 +282,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... PacManCE"
-	@echo "... src/CreditsState.o"
-	@echo "... src/CreditsState.i"
-	@echo "... src/CreditsState.s"
 	@echo "... src/Enemy.o"
 	@echo "... src/Enemy.i"
 	@echo "... src/Enemy.s"
