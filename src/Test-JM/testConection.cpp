@@ -34,7 +34,6 @@ void SocketServer() {
         return;
     }
 
-
     // Enlazar socket a la dirección y puerto especificados
     if (bind(server_fd, (struct sockaddr *) &address, sizeof(address)) < 0) {
         cerr << "Error en bind" << endl;
@@ -81,3 +80,7 @@ void SocketServer() {
         return;
     }
 }
+
+//int main(int arg, char const *argv[]){
+//    while(true) { SocketServer();}
+//}

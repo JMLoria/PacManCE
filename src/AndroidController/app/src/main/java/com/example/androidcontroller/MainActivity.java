@@ -12,11 +12,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private TextView txtLevel, txtPoints, txtLives, txtTest;
-
     private int level, points, lives;
-
     private EditText editIP;
-
     public String move = "";
 
     @SuppressLint("MissingInflatedId")
@@ -41,15 +38,11 @@ public class MainActivity extends AppCompatActivity {
             System.out.println("El celular no posee el sensor");
         }
 
-        //Codigo que se genera por el evento del acelerometro
+        //Generated code for accelerometer sensor
         SensorEventListener event = new SensorEventListener() {
             @Override
             public void onSensorChanged(SensorEvent _event) {
-                //Codigo que se genera por el evento del acelerometro
                 float X = _event.values[0], Z = _event.values[2];
-//                System.out.println("Eje x: " + X);
-//                System.out.println("Eje y: " + _event.values[1]);
-//                System.out.println("Eje z: " + Z);
                 if (X < -4) {
                     move = "D";
                     txtTest.setText(move);
@@ -72,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
         };
 
         sm.registerListener(event, s, SensorManager.SENSOR_DELAY_GAME);
+
+
     }
 
     public void moveUp(View view){
