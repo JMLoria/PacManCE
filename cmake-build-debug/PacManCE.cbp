@@ -88,10 +88,34 @@
 		<Unit filename="/home/jose/Desktop/TEC/CE2103/PacManCE/src/Enemy.h">
 			<Option target="PacManCE"/>
 		</Unit>
+		<Unit filename="/home/jose/Desktop/TEC/CE2103/PacManCE/src/GameOverState.cpp">
+			<Option target="PacManCE"/>
+		</Unit>
+		<Unit filename="/home/jose/Desktop/TEC/CE2103/PacManCE/src/GameOverState.h">
+			<Option target="PacManCE"/>
+		</Unit>
+		<Unit filename="/home/jose/Desktop/TEC/CE2103/PacManCE/src/LinkedList.cpp">
+			<Option target="PacManCE"/>
+		</Unit>
+		<Unit filename="/home/jose/Desktop/TEC/CE2103/PacManCE/src/LinkedList.h">
+			<Option target="PacManCE"/>
+		</Unit>
 		<Unit filename="/home/jose/Desktop/TEC/CE2103/PacManCE/src/MainMenuState.cpp">
 			<Option target="PacManCE"/>
 		</Unit>
 		<Unit filename="/home/jose/Desktop/TEC/CE2103/PacManCE/src/MainMenuState.h">
+			<Option target="PacManCE"/>
+		</Unit>
+		<Unit filename="/home/jose/Desktop/TEC/CE2103/PacManCE/src/Node.cpp">
+			<Option target="PacManCE"/>
+		</Unit>
+		<Unit filename="/home/jose/Desktop/TEC/CE2103/PacManCE/src/Node.h">
+			<Option target="PacManCE"/>
+		</Unit>
+		<Unit filename="/home/jose/Desktop/TEC/CE2103/PacManCE/src/Pellet.cpp">
+			<Option target="PacManCE"/>
+		</Unit>
+		<Unit filename="/home/jose/Desktop/TEC/CE2103/PacManCE/src/Pellet.h">
 			<Option target="PacManCE"/>
 		</Unit>
 		<Unit filename="/home/jose/Desktop/TEC/CE2103/PacManCE/src/PlayState.cpp">

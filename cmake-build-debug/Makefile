@@ -153,6 +153,54 @@ src/Enemy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/Enemy.cpp.s
 .PHONY : src/Enemy.cpp.s
 
+src/GameOverState.o: src/GameOverState.cpp.o
+.PHONY : src/GameOverState.o
+
+# target to build an object file
+src/GameOverState.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/GameOverState.cpp.o
+.PHONY : src/GameOverState.cpp.o
+
+src/GameOverState.i: src/GameOverState.cpp.i
+.PHONY : src/GameOverState.i
+
+# target to preprocess a source file
+src/GameOverState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/GameOverState.cpp.i
+.PHONY : src/GameOverState.cpp.i
+
+src/GameOverState.s: src/GameOverState.cpp.s
+.PHONY : src/GameOverState.s
+
+# target to generate assembly for a file
+src/GameOverState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/GameOverState.cpp.s
+.PHONY : src/GameOverState.cpp.s
+
+src/LinkedList.o: src/LinkedList.cpp.o
+.PHONY : src/LinkedList.o
+
+# target to build an object file
+src/LinkedList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/LinkedList.cpp.o
+.PHONY : src/LinkedList.cpp.o
+
+src/LinkedList.i: src/LinkedList.cpp.i
+.PHONY : src/LinkedList.i
+
+# target to preprocess a source file
+src/LinkedList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/LinkedList.cpp.i
+.PHONY : src/LinkedList.cpp.i
+
+src/LinkedList.s: src/LinkedList.cpp.s
+.PHONY : src/LinkedList.s
+
+# target to generate assembly for a file
+src/LinkedList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/LinkedList.cpp.s
+.PHONY : src/LinkedList.cpp.s
+
 src/MainMenuState.o: src/MainMenuState.cpp.o
 .PHONY : src/MainMenuState.o
 
@@ -176,6 +224,54 @@ src/MainMenuState.s: src/MainMenuState.cpp.s
 src/MainMenuState.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/MainMenuState.cpp.s
 .PHONY : src/MainMenuState.cpp.s
+
+src/Node.o: src/Node.cpp.o
+.PHONY : src/Node.o
+
+# target to build an object file
+src/Node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/Node.cpp.o
+.PHONY : src/Node.cpp.o
+
+src/Node.i: src/Node.cpp.i
+.PHONY : src/Node.i
+
+# target to preprocess a source file
+src/Node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/Node.cpp.i
+.PHONY : src/Node.cpp.i
+
+src/Node.s: src/Node.cpp.s
+.PHONY : src/Node.s
+
+# target to generate assembly for a file
+src/Node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/Node.cpp.s
+.PHONY : src/Node.cpp.s
+
+src/Pellet.o: src/Pellet.cpp.o
+.PHONY : src/Pellet.o
+
+# target to build an object file
+src/Pellet.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/Pellet.cpp.o
+.PHONY : src/Pellet.cpp.o
+
+src/Pellet.i: src/Pellet.cpp.i
+.PHONY : src/Pellet.i
+
+# target to preprocess a source file
+src/Pellet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/Pellet.cpp.i
+.PHONY : src/Pellet.cpp.i
+
+src/Pellet.s: src/Pellet.cpp.s
+.PHONY : src/Pellet.s
+
+# target to generate assembly for a file
+src/Pellet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/Pellet.cpp.s
+.PHONY : src/Pellet.cpp.s
 
 src/PlayState.o: src/PlayState.cpp.o
 .PHONY : src/PlayState.o
@@ -309,9 +405,21 @@ help:
 	@echo "... src/Enemy.o"
 	@echo "... src/Enemy.i"
 	@echo "... src/Enemy.s"
+	@echo "... src/GameOverState.o"
+	@echo "... src/GameOverState.i"
+	@echo "... src/GameOverState.s"
+	@echo "... src/LinkedList.o"
+	@echo "... src/LinkedList.i"
+	@echo "... src/LinkedList.s"
 	@echo "... src/MainMenuState.o"
 	@echo "... src/MainMenuState.i"
 	@echo "... src/MainMenuState.s"
+	@echo "... src/Node.o"
+	@echo "... src/Node.i"
+	@echo "... src/Node.s"
+	@echo "... src/Pellet.o"
+	@echo "... src/Pellet.i"
+	@echo "... src/Pellet.s"
 	@echo "... src/PlayState.o"
 	@echo "... src/PlayState.i"
 	@echo "... src/PlayState.s"

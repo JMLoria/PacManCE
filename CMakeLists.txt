@@ -14,7 +14,7 @@ add_executable( PacManCE src/main.cpp src/PlayState.cpp src/PlayState.h src/Main
                 src/Tile.cpp src/Tile.h src/Test-JM/testConection.cpp
                 src/Tile.cpp src/Tile.h src/GameOverState.h src/GameOverState.cpp
                 src/Pellet.cpp src/Pellet.h
-                )
+        src/LinkedList.cpp src/Node.cpp)
 
 # Linking sfml to the project
 target_link_libraries(PacManCE sfml-graphics sfml-audio)
