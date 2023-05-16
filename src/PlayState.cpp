@@ -110,26 +110,22 @@ void PlayState::updatePlayerMovement(){
 
     if (this->pressUp){
 
-        std::cout << "Pressing Up" << std::endl;
-        this->player->rect.move(0, -5);
+        this->player->sprite.move(0, -5);
     }
 
     if (this->pressDown){
 
-        std::cout << "Pressing Down" << std::endl;
-        this->player->rect.move(0, 5);
+        this->player->sprite.move(0, 5);
     }
 
     if (this->pressLeft){
 
-        std::cout << "Pressing Left" << std::endl;
-        this->player->rect.move(-5, 0);
+        this->player->sprite.move(-5, 0);
     }
 
     if (this->pressRight){
 
-        std::cout << "Pressing Right" << std::endl;
-        this->player->rect.move(5, 0);
+        this->player->sprite.move(5, 0);
     }
 
 

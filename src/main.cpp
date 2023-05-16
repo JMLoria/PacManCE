@@ -39,7 +39,7 @@ int main() {
     // The different game states :)
     MainMenuState mainMenu(&window, &pageName);
     PlayState game(&window, &pageName);
-    GameOverState gameOver(&window, &pageName);
+    // GameOverState gameOver(&window, &pageName);
 
 /*
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

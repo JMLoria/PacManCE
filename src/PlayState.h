@@ -8,6 +8,8 @@
 #include <SFML/Network.hpp>
 
 // Data structures
+#include "LinkedList.h"
+#include <vector>
 
 // Gameplay classes
 #include "Player.h"
@@ -31,7 +33,9 @@ private:
     std::map<String, Texture*> textures;
 
     // Variables for level generation
-    int curLevel[50][50]; // Stores level data
+    int gridSize;
+    int curLevel[30][26]; // Stores level data
+
     // not yet, i need a vector or smth // Stores sprites
 
     // Inputs

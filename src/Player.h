@@ -11,6 +11,16 @@
 // Namespaces for convenience sake
 using namespace sf;
 
+// Player animation states
+enum PLAYERSTATES {
+
+    RIGHT = 0,
+    LEFT,
+    UP,
+    DOWN
+};
+
+// The class itself
 class Player {
 
 private:
@@ -19,7 +29,12 @@ private:
     Sprite sprite;
     Texture textureSheet;
 
+    // Player Attributes
+    Vector2f velocity;
+    const float movementSpeed;
+
     // Animations
+    Clock animationTimer;
 
     // Movement
     bool isMovingLeft;
@@ -34,7 +49,7 @@ private:
 
     //Private functions
     void initTexture();
-    void initSprite();
+    void initSprite(int x, int y);
 
 public:
 
@@ -44,7 +59,6 @@ public:
     // Constructor and Destructor
     Player(int x, int y);
     virtual ~Player();
-
 
     // Essential Functions
     void update();
