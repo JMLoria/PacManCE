@@ -6,6 +6,9 @@
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
+/// @brief Initializes classes values
+/// @param target Render Window Reference
+/// @param pageName Game menu controller reference
 void PlayState::initVariables(RenderWindow *target, String *pageName){
 
     // Setting up the values
@@ -24,6 +27,7 @@ void PlayState::initVariables(RenderWindow *target, String *pageName){
 
 }
 
+/// @brief Initializes the UI
 void PlayState::initFonts(){
 
     this->font.loadFromFile("/home/skg/PacManCE/assets/fonts/DlxFont.ttf");
@@ -38,6 +42,7 @@ void PlayState::initFonts(){
 
 }
 
+/// @brief Reads CSV files and creates the map (poorly)
 void PlayState::createLevelMap() {
 
     // Reading said CSV
@@ -93,6 +98,10 @@ void PlayState::createLevelMap() {
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
+/// @brief Class constructor
+/// @param target Render Window reference
+/// @param pageName Game Menu Controller
+/// @param curLevel the level we're currently playing
 PlayState::PlayState(RenderWindow *target, String *pageName, int* curLevel){
 
     // Initializing some values
@@ -104,6 +113,7 @@ PlayState::PlayState(RenderWindow *target, String *pageName, int* curLevel){
     this->initFonts();
 }
 
+/// @brief Class destructor, frees all of the pointers
 PlayState::~PlayState(){
 
     delete this->pageName;
@@ -118,6 +128,7 @@ PlayState::~PlayState(){
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
+/// @brief Checks the player's input in a very specific way
 void PlayState::checkInput(){
 
     // Vertical input
@@ -154,6 +165,7 @@ void PlayState::checkInput(){
 
 }
 
+/// @brief Checks collisions with the level itself
 void PlayState::updateLevelCollisions(){
 
     //Collision
@@ -217,10 +229,12 @@ void PlayState::updateLevelCollisions(){
 
 }
 
+/// @brief Checks if the player collides with the different enemies
 void PlayState::updateEnemyCollisions(){
 
 }
 
+/// @brief updates the player's internal vector, then applies movement
 void PlayState::updatePlayerMovement(){
 
     if (this->pressUp){
@@ -249,6 +263,7 @@ void PlayState::updatePlayerMovement(){
 
 }
 
+/// @brief Updates the enemies' pathfinding and movement
 void PlayState::updateEnemiesMovement(){
 
 }
@@ -259,6 +274,7 @@ void PlayState::updateEnemiesMovement(){
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
+/// @brief function that gets called every frame, updating values
 void PlayState::update(){
 
     // Window stuff
@@ -274,6 +290,7 @@ void PlayState::update(){
 
 }
 
+/// @brief Draws the different objects inside the renderwindow
 void PlayState::draw(){
 
     // Clears the previous frame
@@ -296,6 +313,7 @@ void PlayState::draw(){
 
 }
 
+/// @brief Polling events so that you can change scenes and exit the game
 void PlayState::pollEvents(){
 
     while (this->window->pollEvent(this->ev)){

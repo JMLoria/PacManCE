@@ -6,6 +6,7 @@
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
+/// @brief Initializes the tiles' texture sheet
 void Tiles::initTexture() {
 
     // Loads the actual file
@@ -14,6 +15,9 @@ void Tiles::initTexture() {
     }
 }
 
+/// @brief Configures the sprite for convenience
+/// @param x X position for Sprite
+/// @param y Y position for Sprite
 void Tiles::initSprite(int x, int y) {
 
     IntRect IDRect;
@@ -66,6 +70,9 @@ void Tiles::initSprite(int x, int y) {
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
+/// @brief Class constructor for the Tile
+/// @param x X position for Object
+/// @param y Y position for Object
 Tiles::Tiles(int x, int y, int ID) {
 
     // Setting up tile ID
@@ -77,6 +84,7 @@ Tiles::Tiles(int x, int y, int ID) {
 
 }
 
+/// @brief Class destructor
 Tiles::~Tiles() {
 
     return;
@@ -88,6 +96,8 @@ Tiles::~Tiles() {
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
+/// @brief Accessor to the player's sprite, let's you get its values
+/// @return the player sprite attribute
 Sprite Tiles::getSprite() {
 
     return this->sprite;
@@ -99,6 +109,8 @@ Sprite Tiles::getSprite() {
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
+/// @brief Renders the object itself in the window
+/// @param target Render window reference
 void Tiles::render(RenderTarget* target) {
 
     target->draw(this->sprite);

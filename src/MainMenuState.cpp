@@ -6,6 +6,9 @@
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
+/// @brief Initializes the variables the class to run properly
+/// @param target the renderWindow reference
+/// @param pageName the game menu controller string
 void MainMenuState::initVariables(RenderWindow *target, String *pageName){
     
     // Setting up the values
@@ -20,6 +23,9 @@ void MainMenuState::initVariables(RenderWindow *target, String *pageName){
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
+/// @brief Class constructor
+/// @param target Render Window reference
+/// @param pageName game menu controller string
 MainMenuState::MainMenuState(RenderWindow *target, String *pageName){
 
     this->initVariables(target, pageName);
@@ -37,6 +43,7 @@ MainMenuState::~MainMenuState(){
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
+/// @brief Checks the different inputs made by the user
 void MainMenuState::checkInputs(){
 
 }
@@ -47,11 +54,13 @@ void MainMenuState::checkInputs(){
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
+/// @brief Updates the different values per frame
 void MainMenuState::update(){
 
     this->pollEvents();
 }
 
+/// @brief Renders the entire menu
 void MainMenuState::draw(){
 
     // Clears the previous frame
@@ -61,6 +70,7 @@ void MainMenuState::draw(){
     this->window->display();
 }
 
+/// @brief Polling events so that you can change scenes and exit the game
 void MainMenuState::pollEvents(){
 
     while (this->window->pollEvent(this->ev)){

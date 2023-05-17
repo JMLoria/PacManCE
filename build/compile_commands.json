@@ -1,0 +1,62 @@
+[
+{
+  "directory": "/home/skg/PacManCE/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/PacManCE.dir/src/main.cpp.o -c /home/skg/PacManCE/src/main.cpp",
+  "file": "/home/skg/PacManCE/src/main.cpp",
+  "output": "CMakeFiles/PacManCE.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/skg/PacManCE/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/PacManCE.dir/src/PlayState.cpp.o -c /home/skg/PacManCE/src/PlayState.cpp",
+  "file": "/home/skg/PacManCE/src/PlayState.cpp",
+  "output": "CMakeFiles/PacManCE.dir/src/PlayState.cpp.o"
+},
+{
+  "directory": "/home/skg/PacManCE/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/PacManCE.dir/src/MainMenuState.cpp.o -c /home/skg/PacManCE/src/MainMenuState.cpp",
+  "file": "/home/skg/PacManCE/src/MainMenuState.cpp",
+  "output": "CMakeFiles/PacManCE.dir/src/MainMenuState.cpp.o"
+},
+{
+  "directory": "/home/skg/PacManCE/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/PacManCE.dir/src/Player.cpp.o -c /home/skg/PacManCE/src/Player.cpp",
+  "file": "/home/skg/PacManCE/src/Player.cpp",
+  "output": "CMakeFiles/PacManCE.dir/src/Player.cpp.o"
+},
+{
+  "directory": "/home/skg/PacManCE/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/PacManCE.dir/src/Enemy.cpp.o -c /home/skg/PacManCE/src/Enemy.cpp",
+  "file": "/home/skg/PacManCE/src/Enemy.cpp",
+  "output": "CMakeFiles/PacManCE.dir/src/Enemy.cpp.o"
+},
+{
+  "directory": "/home/skg/PacManCE/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/PacManCE.dir/src/Tiles.cpp.o -c /home/skg/PacManCE/src/Tiles.cpp",
+  "file": "/home/skg/PacManCE/src/Tiles.cpp",
+  "output": "CMakeFiles/PacManCE.dir/src/Tiles.cpp.o"
+},
+{
+  "directory": "/home/skg/PacManCE/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/PacManCE.dir/src/Test-JM/testConection.cpp.o -c /home/skg/PacManCE/src/Test-JM/testConection.cpp",
+  "file": "/home/skg/PacManCE/src/Test-JM/testConection.cpp",
+  "output": "CMakeFiles/PacManCE.dir/src/Test-JM/testConection.cpp.o"
+},
+{
+  "directory": "/home/skg/PacManCE/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/PacManCE.dir/src/Pellet.cpp.o -c /home/skg/PacManCE/src/Pellet.cpp",
+  "file": "/home/skg/PacManCE/src/Pellet.cpp",
+  "output": "CMakeFiles/PacManCE.dir/src/Pellet.cpp.o"
+},
+{
+  "directory": "/home/skg/PacManCE/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/PacManCE.dir/src/LinkedList.cpp.o -c /home/skg/PacManCE/src/LinkedList.cpp",
+  "file": "/home/skg/PacManCE/src/LinkedList.cpp",
+  "output": "CMakeFiles/PacManCE.dir/src/LinkedList.cpp.o"
+},
+{
+  "directory": "/home/skg/PacManCE/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/PacManCE.dir/src/Node.cpp.o -c /home/skg/PacManCE/src/Node.cpp",
+  "file": "/home/skg/PacManCE/src/Node.cpp",
+  "output": "CMakeFiles/PacManCE.dir/src/Node.cpp.o"
+}
+]

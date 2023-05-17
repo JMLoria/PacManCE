@@ -6,6 +6,7 @@
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
+/// @brief Initializes the player's texture sheet
 void Player::initTexture(){
 
     // Loading texture from file
@@ -15,6 +16,9 @@ void Player::initTexture(){
     }
 }
 
+/// @brief Configures the sprite for convenience
+/// @param x X position for Sprite
+/// @param y Y position for Sprite
 void Player::initSprite(int x, int y){
 
     this->sprite.setTexture(this->textureSheet);
@@ -30,6 +34,9 @@ void Player::initSprite(int x, int y){
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
+/// @brief Class constructor for the player
+/// @param x X position for Object
+/// @param y Y position for Object
 Player::Player(int x, int y){
 
     // Initializing values
@@ -40,6 +47,7 @@ Player::Player(int x, int y){
     this->initSprite(x, y);
 }
 
+/// @brief Class destructor
 Player::~Player(){
 
 }
@@ -50,17 +58,25 @@ Player::~Player(){
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
+/// @brief Accessor to the player's sprite, let's you get its values
+/// @return the player sprite attribute
 Sprite& Player::getSprite(){
 
     return this->sprite;
 }
 
+
+/// @brief Accessor for the player's velocity vector
+/// @return the player's velocity vector
 Vector2f Player::getVelocity() {
 
     return this->velocity;
 }
 
-Vector2f Player::setVelocity(int x, int y) {
+/// @brief Changes the current velocity vector
+/// @param x X value for Vector
+/// @param y Y Value for Vector
+void Player::setVelocity(int x, int y) {
 
     this->velocity = Vector2f(x, y);
     // std::cout << "This is the new velocity: (" << x << ", " << y << ")" << std::endl;
@@ -72,6 +88,7 @@ Vector2f Player::setVelocity(int x, int y) {
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
+/// @brief Updates the player's movement
 void Player::updateMovement(){
 
     // Making the logic for applying movement speed
@@ -88,6 +105,7 @@ void Player::updateMovement(){
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
+/// @brief Updates the objects values every frame
 void Player::update(){
 
     // Running functions amirite
@@ -95,6 +113,8 @@ void Player::update(){
     // updateAnimation();
 }
 
+/// @brief Renders the object itself in the window
+/// @param target Render window reference
 void Player::draw(RenderTarget *target){
 
     target->draw(this->sprite);

@@ -55,7 +55,7 @@ public:
     // Accessors
     Sprite& getSprite();
     Vector2f getVelocity();
-    Vector2f setVelocity(int x, int y);
+    void setVelocity(int x, int y);
 
     // Essential Functions
     void update();
