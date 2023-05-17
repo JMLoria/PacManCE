@@ -81,6 +81,6 @@ void SocketServer() {
     }
 }
 
-int main(int arg, char const *argv[]){
-    while(true) { SocketServer();}
-}
+//int main(int arg, char const *argv[]){
+//    while(true) { SocketServer();}
+//}

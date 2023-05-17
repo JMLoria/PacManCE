@@ -31,7 +31,7 @@ private:
 
     // Player Attributes
     Vector2f velocity;
-    const float movementSpeed;
+    float movementSpeed;
 
     // Animations
     Clock animationTimer;
@@ -42,27 +42,28 @@ private:
     bool isMovingUp;
     bool isMovingRight;
 
-    // Logic
-
-    // Debug function
-    void initShape(int x, int y);
-
     //Private functions
     void initTexture();
     void initSprite(int x, int y);
 
 public:
 
-    // Debug stuff
-    CircleShape rect;
-
     // Constructor and Destructor
     Player(int x, int y);
     virtual ~Player();
 
+    // Accessors
+    Sprite& getSprite();
+    Vector2f getVelocity();
+    Vector2f setVelocity(int x, int y);
+
     // Essential Functions
     void update();
     void draw(RenderTarget* target);
+
+    // Functions
+    void updateMovement();
+    void updateAnimation();
 
 };
 

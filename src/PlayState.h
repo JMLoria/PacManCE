@@ -9,12 +9,16 @@
 
 // Data structures
 #include "LinkedList.h"
+#include <iostream>
+#include <fstream>
+#include <string>
 #include <vector>
+#include <sstream>
 
 // Gameplay classes
 #include "Player.h"
 //#include <Enemy.h>
-//#include <Tile.h>
+#include "Tiles.h"
 
 // Namespaces for convenience sake
 using namespace sf;
@@ -30,13 +34,13 @@ private:
 
     // Resources
     Font font;
-    std::map<String, Texture*> textures;
+    Text UI;
 
     // Variables for level generation
+    int curLevel;
     int gridSize;
-    int curLevel[30][26]; // Stores level data
-
-    // not yet, i need a vector or smth // Stores sprites
+    int curLayout[30][26]; // Stores level data
+    std::vector<Tiles> walls;
 
     // Inputs
     bool pressUp;
@@ -56,12 +60,13 @@ private:
 
     // Private Functions
     void initVariables(RenderWindow *target, String *pageName);
-    void initTextures();
+    void initFonts();
+    void createLevelMap();
 
 public: 
 
     // Constructor and Destructor
-    PlayState(RenderWindow *target, String *pageName);
+    PlayState(RenderWindow *target, String *pageName, int* curLevel);
     virtual ~PlayState();
 
     // Functions
@@ -70,6 +75,7 @@ public:
     void updateEnemyCollisions();
     void updatePlayerMovement();
     void updateEnemiesMovement();
+    void updateText();
 
     // Essential Functions
     void update();

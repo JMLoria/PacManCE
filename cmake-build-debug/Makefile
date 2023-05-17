@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/jose/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/cmake
+CMAKE_COMMAND = /snap/clion/235/bin/cmake/linux/x64/bin/cmake
 
 # The command to remove a file.
-RM = /home/jose/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/cmake -E rm -f
+RM = /snap/clion/235/bin/cmake/linux/x64/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jose/Desktop/PacManCE
+CMAKE_SOURCE_DIR = /home/skg/PacManCE
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jose/Desktop/PacManCE/cmake-build-debug
+CMAKE_BINARY_DIR = /home/skg/PacManCE/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/jose/Desktop/PacManCE/cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/jose/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/235/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/jose/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.9011.31/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/235/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jose/Desktop/PacManCE/cmake-build-debug/CMakeFiles /home/jose/Desktop/PacManCE/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/skg/PacManCE/cmake-build-debug/CMakeFiles /home/skg/PacManCE/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jose/Desktop/PacManCE/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/skg/PacManCE/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -152,30 +152,6 @@ src/Enemy.s: src/Enemy.cpp.s
 src/Enemy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/Enemy.cpp.s
 .PHONY : src/Enemy.cpp.s
-
-src/GameOverState.o: src/GameOverState.cpp.o
-.PHONY : src/GameOverState.o
-
-# target to build an object file
-src/GameOverState.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/GameOverState.cpp.o
-.PHONY : src/GameOverState.cpp.o
-
-src/GameOverState.i: src/GameOverState.cpp.i
-.PHONY : src/GameOverState.i
-
-# target to preprocess a source file
-src/GameOverState.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/GameOverState.cpp.i
-.PHONY : src/GameOverState.cpp.i
-
-src/GameOverState.s: src/GameOverState.cpp.s
-.PHONY : src/GameOverState.s
-
-# target to generate assembly for a file
-src/GameOverState.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/GameOverState.cpp.s
-.PHONY : src/GameOverState.cpp.s
 
 src/LinkedList.o: src/LinkedList.cpp.o
 .PHONY : src/LinkedList.o
@@ -345,29 +321,29 @@ src/Test-JM/testConection.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/Test-JM/testConection.cpp.s
 .PHONY : src/Test-JM/testConection.cpp.s
 
-src/Tile.o: src/Tile.cpp.o
-.PHONY : src/Tile.o
+src/Tiles.o: src/Tiles.cpp.o
+.PHONY : src/Tiles.o
 
 # target to build an object file
-src/Tile.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/Tile.cpp.o
-.PHONY : src/Tile.cpp.o
+src/Tiles.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/Tiles.cpp.o
+.PHONY : src/Tiles.cpp.o
 
-src/Tile.i: src/Tile.cpp.i
-.PHONY : src/Tile.i
+src/Tiles.i: src/Tiles.cpp.i
+.PHONY : src/Tiles.i
 
 # target to preprocess a source file
-src/Tile.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/Tile.cpp.i
-.PHONY : src/Tile.cpp.i
+src/Tiles.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/Tiles.cpp.i
+.PHONY : src/Tiles.cpp.i
 
-src/Tile.s: src/Tile.cpp.s
-.PHONY : src/Tile.s
+src/Tiles.s: src/Tiles.cpp.s
+.PHONY : src/Tiles.s
 
 # target to generate assembly for a file
-src/Tile.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/Tile.cpp.s
-.PHONY : src/Tile.cpp.s
+src/Tiles.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PacManCE.dir/build.make CMakeFiles/PacManCE.dir/src/Tiles.cpp.s
+.PHONY : src/Tiles.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -405,9 +381,6 @@ help:
 	@echo "... src/Enemy.o"
 	@echo "... src/Enemy.i"
 	@echo "... src/Enemy.s"
-	@echo "... src/GameOverState.o"
-	@echo "... src/GameOverState.i"
-	@echo "... src/GameOverState.s"
 	@echo "... src/LinkedList.o"
 	@echo "... src/LinkedList.i"
 	@echo "... src/LinkedList.s"
@@ -429,9 +402,9 @@ help:
 	@echo "... src/Test-JM/testConection.o"
 	@echo "... src/Test-JM/testConection.i"
 	@echo "... src/Test-JM/testConection.s"
-	@echo "... src/Tile.o"
-	@echo "... src/Tile.i"
-	@echo "... src/Tile.s"
+	@echo "... src/Tiles.o"
+	@echo "... src/Tiles.i"
+	@echo "... src/Tiles.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

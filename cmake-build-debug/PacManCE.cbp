@@ -5,21 +5,21 @@
 		<Option title="PacManCE"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\usr\;CMake Files\..\..\..\usr\lib\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/jose/Desktop/PacManCE/cmake-build-debug"/>
+				<Option working_dir="/home/skg/PacManCE/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/jose/Desktop/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/jose/Desktop/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/jose/Desktop/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/jose/Desktop/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/home/skg/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/home/skg/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/home/skg/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/home/skg/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PacManCE">
-				<Option output="/home/jose/Desktop/PacManCE/cmake-build-debug/PacManCE" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jose/Desktop/PacManCE/cmake-build-debug"/>
+				<Option output="/home/skg/PacManCE/cmake-build-debug/PacManCE" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/skg/PacManCE/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -33,15 +33,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/jose/Desktop/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 PacManCE"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/jose/Desktop/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/jose/Desktop/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/jose/Desktop/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/home/skg/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 PacManCE"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/home/skg/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/home/skg/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/home/skg/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PacManCE/fast">
-				<Option output="/home/jose/Desktop/PacManCE/cmake-build-debug/PacManCE" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jose/Desktop/PacManCE/cmake-build-debug"/>
+				<Option output="/home/skg/PacManCE/cmake-build-debug/PacManCE" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/skg/PacManCE/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -55,110 +55,104 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/jose/Desktop/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 PacManCE/fast"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/jose/Desktop/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/jose/Desktop/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/jose/Desktop/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/home/skg/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 PacManCE/fast"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/home/skg/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/home/skg/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/home/skg/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/jose/Desktop/PacManCE/cmake-build-debug"/>
+				<Option working_dir="/home/skg/PacManCE/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/jose/Desktop/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/jose/Desktop/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/jose/Desktop/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/jose/Desktop/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/home/skg/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/home/skg/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/home/skg/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/home/skg/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/jose/Desktop/PacManCE/cmake-build-debug"/>
+				<Option working_dir="/home/skg/PacManCE/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/jose/Desktop/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/jose/Desktop/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/jose/Desktop/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/jose/Desktop/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j2 -f &quot;/home/skg/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j2 -f &quot;/home/skg/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j2 -f &quot;/home/skg/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j2 -f &quot;/home/skg/PacManCE/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/jose/Desktop/PacManCE/src/Enemy.cpp">
+		<Unit filename="/home/skg/PacManCE/src/Enemy.cpp">
 			<Option target="PacManCE"/>
 		</Unit>
-		<Unit filename="/home/jose/Desktop/PacManCE/src/Enemy.h">
+		<Unit filename="/home/skg/PacManCE/src/Enemy.h">
 			<Option target="PacManCE"/>
 		</Unit>
-		<Unit filename="/home/jose/Desktop/PacManCE/src/GameOverState.cpp">
+		<Unit filename="/home/skg/PacManCE/src/LinkedList.cpp">
 			<Option target="PacManCE"/>
 		</Unit>
-		<Unit filename="/home/jose/Desktop/PacManCE/src/GameOverState.h">
+		<Unit filename="/home/skg/PacManCE/src/LinkedList.h">
 			<Option target="PacManCE"/>
 		</Unit>
-		<Unit filename="/home/jose/Desktop/PacManCE/src/LinkedList.cpp">
+		<Unit filename="/home/skg/PacManCE/src/MainMenuState.cpp">
 			<Option target="PacManCE"/>
 		</Unit>
-		<Unit filename="/home/jose/Desktop/PacManCE/src/LinkedList.h">
+		<Unit filename="/home/skg/PacManCE/src/MainMenuState.h">
 			<Option target="PacManCE"/>
 		</Unit>
-		<Unit filename="/home/jose/Desktop/PacManCE/src/MainMenuState.cpp">
+		<Unit filename="/home/skg/PacManCE/src/Node.cpp">
 			<Option target="PacManCE"/>
 		</Unit>
-		<Unit filename="/home/jose/Desktop/PacManCE/src/MainMenuState.h">
+		<Unit filename="/home/skg/PacManCE/src/Node.h">
 			<Option target="PacManCE"/>
 		</Unit>
-		<Unit filename="/home/jose/Desktop/PacManCE/src/Node.cpp">
+		<Unit filename="/home/skg/PacManCE/src/Pellet.cpp">
 			<Option target="PacManCE"/>
 		</Unit>
-		<Unit filename="/home/jose/Desktop/PacManCE/src/Node.h">
+		<Unit filename="/home/skg/PacManCE/src/Pellet.h">
 			<Option target="PacManCE"/>
 		</Unit>
-		<Unit filename="/home/jose/Desktop/PacManCE/src/Pellet.cpp">
+		<Unit filename="/home/skg/PacManCE/src/PlayState.cpp">
 			<Option target="PacManCE"/>
 		</Unit>
-		<Unit filename="/home/jose/Desktop/PacManCE/src/Pellet.h">
+		<Unit filename="/home/skg/PacManCE/src/PlayState.h">
 			<Option target="PacManCE"/>
 		</Unit>
-		<Unit filename="/home/jose/Desktop/PacManCE/src/PlayState.cpp">
+		<Unit filename="/home/skg/PacManCE/src/Player.cpp">
 			<Option target="PacManCE"/>
 		</Unit>
-		<Unit filename="/home/jose/Desktop/PacManCE/src/PlayState.h">
+		<Unit filename="/home/skg/PacManCE/src/Player.h">
 			<Option target="PacManCE"/>
 		</Unit>
-		<Unit filename="/home/jose/Desktop/PacManCE/src/Player.cpp">
+		<Unit filename="/home/skg/PacManCE/src/Test-JM/testConection.cpp">
 			<Option target="PacManCE"/>
 		</Unit>
-		<Unit filename="/home/jose/Desktop/PacManCE/src/Player.h">
+		<Unit filename="/home/skg/PacManCE/src/Tiles.cpp">
 			<Option target="PacManCE"/>
 		</Unit>
-		<Unit filename="/home/jose/Desktop/PacManCE/src/Test-JM/testConection.cpp">
+		<Unit filename="/home/skg/PacManCE/src/Tiles.h">
 			<Option target="PacManCE"/>
 		</Unit>
-		<Unit filename="/home/jose/Desktop/PacManCE/src/Tile.cpp">
+		<Unit filename="/home/skg/PacManCE/src/main.cpp">
 			<Option target="PacManCE"/>
 		</Unit>
-		<Unit filename="/home/jose/Desktop/PacManCE/src/Tile.h">
-			<Option target="PacManCE"/>
-		</Unit>
-		<Unit filename="/home/jose/Desktop/PacManCE/src/main.cpp">
-			<Option target="PacManCE"/>
-		</Unit>
-		<Unit filename="/home/jose/Desktop/PacManCE/CMakeLists.txt">
+		<Unit filename="/home/skg/PacManCE/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/jose/Desktop/PacManCE/../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		<Unit filename="/home/skg/PacManCE/../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/jose/Desktop/PacManCE/../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		<Unit filename="/home/skg/PacManCE/../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/jose/Desktop/PacManCE/../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		<Unit filename="/home/skg/PacManCE/../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/jose/Desktop/PacManCE/../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		<Unit filename="/home/skg/PacManCE/../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/jose/Desktop/PacManCE/../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		<Unit filename="/home/skg/PacManCE/../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

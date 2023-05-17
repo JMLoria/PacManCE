@@ -7,7 +7,6 @@
 // All the game's states
 #include "MainMenuState.h"
 #include "PlayState.h"
-#include "GameOverState.h"
 
 // Namespaces for convenience sake
 //using namespace std;
@@ -38,7 +37,7 @@ int main() {
 
     // The different game states :)
     MainMenuState mainMenu(&window, &pageName);
-    PlayState game(&window, &pageName);
+    PlayState game(&window, &pageName, &curLevel);
     // GameOverState gameOver(&window, &pageName);
 
 /*
@@ -83,7 +82,7 @@ int main() {
 
                 // Current State
                 inPlayState = true;
-                game = *new PlayState(&window, &pageName);
+                game = *new PlayState(&window, &pageName, &curLevel);
             }
 
             game.update();

@@ -11,9 +11,9 @@ find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)
 # Excecutables amirite :3
 add_executable( PacManCE src/main.cpp src/PlayState.cpp src/PlayState.h src/MainMenuState.cpp 
                 src/MainMenuState.h src/Player.cpp src/Player.h src/Enemy.cpp src/Enemy.h
-                src/Tile.cpp src/Tile.h src/Test-JM/testConection.cpp
-                src/Tile.cpp src/Tile.h src/GameOverState.h src/GameOverState.cpp
-                src/Pellet.cpp src/Pellet.h
+        src/Tiles.cpp src/Tiles.h src/Test-JM/testConection.cpp
+        src/Tiles.cpp src/Tiles.h
+        src/Pellet.cpp src/Pellet.h
         src/LinkedList.cpp src/Node.cpp)
 
 # Linking sfml to the project
