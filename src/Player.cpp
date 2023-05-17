@@ -63,7 +63,7 @@ Vector2f Player::getVelocity() {
 Vector2f Player::setVelocity(int x, int y) {
 
     this->velocity = Vector2f(x, y);
-    std::cout << "This is the new velocity: (" << x << ", " << y << ")" << std::endl;
+    // std::cout << "This is the new velocity: (" << x << ", " << y << ")" << std::endl;
 }
 
 /*

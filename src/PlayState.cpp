@@ -11,6 +11,7 @@ void PlayState::initVariables(RenderWindow *target, String *pageName){
     // Setting up the values
     this->window = target;
     this->pageName = pageName;
+    this->gridSize = 16 * 3;
     this->curScore = 0;
 
     // Setting the default values
@@ -29,7 +30,7 @@ void PlayState::initFonts(){
 
     // UI setup
     this->UI.setFont(this->font);
-    this->UI.setCharacterSize(25);
+    this->UI.setCharacterSize(15);
     this->UI.setStyle(Text::Bold);
 
     // Sets the string
@@ -40,23 +41,50 @@ void PlayState::initFonts(){
 void PlayState::createLevelMap() {
 
     // Reading said CSV
-    std::vector<std::vector<std::string>> content;
+    std::string dir = "/home/skg/PacManCE/assets/data/level"+ std::to_string(this->curLevel) + ".csv";
+
     std::vector<std::string> row;
     std::string line, word;
 
-    std::fstream file (fname, ios::in);
-    if(file.is_open())
-    {
-        while(getline(file, line))
-        {
+    std::ifstream file;
+    file.open(dir);
+
+    if(!file.fail()) {
+
+        std::cout << dir << " was opened\n";
+        while (getline(file, line)) {
             row.clear();
 
-            stringstream str(line);
+            std::stringstream str(line);
 
-            while(getline(str, word, ','))
+            while (getline(str, word, ','))
                 row.push_back(word);
-            content.push_back(row);
+            this->curLayout.push_back(row);
         }
+    }
+    else
+        std::cout<<"Could not open the file: "<< dir << "\n";
+
+    for(int i=0;i<this->curLayout.size();i++)
+    {
+        for(int j=0;j<this->curLayout[i].size();j++)
+        {
+            std::cout<<this->curLayout[i][j]<<" ";
+        }
+        std::cout<<"\n";
+    }
+
+    for(int i=0;i<this->curLayout.size();i++)
+    {
+        for(int j=0;j<this->curLayout[i].size();j++)
+        {
+            if (std::stoi(this->curLayout[i][j]) != -1)
+            {
+                Tiles tile(this->gridSize * j, this->gridSize * i, std::stoi(this->curLayout[i][j]));
+                this->walls.push_back(tile);
+            }
+        }
+    }
 }
 
 /*

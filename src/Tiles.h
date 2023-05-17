@@ -1,6 +1,8 @@
 #ifndef PACMANCE_TILES_H
 #define PACMANCE_TILES_H
 
+#include <iostream>
+
 // SFML Libraries
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
@@ -19,12 +21,12 @@ private:
 
     // Private Functions
     void initTexture();
-    void initSprite();
+    void initSprite(int x, int y);
 
 public:
 
     // Constructor and Destructor
-    Tiles(int ID = 0);
+    Tiles(int x, int y, int ID = 0);
     virtual ~Tiles();
 
     // Accessors

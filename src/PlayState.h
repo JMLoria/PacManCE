@@ -39,7 +39,7 @@ private:
     // Variables for level generation
     int curLevel;
     int gridSize;
-    int curLayout[30][26]; // Stores level data
+    std::vector<std::vector<std::string>> curLayout; // Stores level data
     std::vector<Tiles> walls;
 
     // Inputs

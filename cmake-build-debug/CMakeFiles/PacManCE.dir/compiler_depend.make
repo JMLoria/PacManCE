@@ -1150,8 +1150,14 @@ CMakeFiles/PacManCE.dir/src/PlayState.cpp.o: /home/skg/PacManCE/src/PlayState.cp
   /usr/include/SFML/Network/UdpSocket.hpp \
   /home/skg/PacManCE/src/LinkedList.h \
   /home/skg/PacManCE/src/Node.h \
-  /home/skg/PacManCE/src/Player.h \
   /usr/include/c++/11/iostream \
+  /usr/include/c++/11/fstream \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+  /usr/include/c++/11/bits/fstream.tcc \
+  /usr/include/c++/11/sstream \
+  /usr/include/c++/11/bits/sstream.tcc \
+  /home/skg/PacManCE/src/Player.h \
   /home/skg/PacManCE/src/Tiles.h
 
 CMakeFiles/PacManCE.dir/src/Player.cpp.o: /home/skg/PacManCE/src/Player.cpp \
@@ -1671,17 +1677,7 @@ CMakeFiles/PacManCE.dir/src/Test-JM/testConection.cpp.o: /home/skg/PacManCE/src/
 CMakeFiles/PacManCE.dir/src/Tiles.cpp.o: /home/skg/PacManCE/src/Tiles.cpp \
   /usr/include/stdc-predef.h \
   /home/skg/PacManCE/src/Tiles.h \
-  /usr/include/SFML/Graphics.hpp \
-  /usr/include/SFML/Window.hpp \
-  /usr/include/SFML/System.hpp \
-  /usr/include/SFML/Config.hpp \
-  /usr/include/SFML/System/Clock.hpp \
-  /usr/include/SFML/System/Export.hpp \
-  /usr/include/SFML/System/Time.hpp \
-  /usr/include/SFML/System/Err.hpp \
-  /usr/include/c++/11/ostream \
-  /usr/include/c++/11/ios \
-  /usr/include/c++/11/iosfwd \
+  /usr/include/c++/11/iostream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
   /usr/include/features.h \
@@ -1694,6 +1690,9 @@ CMakeFiles/PacManCE.dir/src/Tiles.cpp.o: /home/skg/PacManCE/src/Tiles.cpp \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
   /usr/include/c++/11/pstl/pstl_config.h \
+  /usr/include/c++/11/ostream \
+  /usr/include/c++/11/ios \
+  /usr/include/c++/11/iosfwd \
   /usr/include/c++/11/bits/stringfwd.h \
   /usr/include/c++/11/bits/memoryfwd.h \
   /usr/include/c++/11/bits/postypes.h \
@@ -1854,6 +1853,16 @@ CMakeFiles/PacManCE.dir/src/Tiles.cpp.o: /home/skg/PacManCE/src/Tiles.cpp \
   /usr/include/c++/11/bits/locale_facets.tcc \
   /usr/include/c++/11/bits/basic_ios.tcc \
   /usr/include/c++/11/bits/ostream.tcc \
+  /usr/include/c++/11/istream \
+  /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/SFML/Graphics.hpp \
+  /usr/include/SFML/Window.hpp \
+  /usr/include/SFML/System.hpp \
+  /usr/include/SFML/Config.hpp \
+  /usr/include/SFML/System/Clock.hpp \
+  /usr/include/SFML/System/Export.hpp \
+  /usr/include/SFML/System/Time.hpp \
+  /usr/include/SFML/System/Err.hpp \
   /usr/include/SFML/System/FileInputStream.hpp \
   /usr/include/SFML/System/InputStream.hpp \
   /usr/include/SFML/System/NonCopyable.hpp \
@@ -2303,6 +2312,12 @@ CMakeFiles/PacManCE.dir/src/main.cpp.o: /home/skg/PacManCE/src/main.cpp \
   /usr/include/SFML/Network/UdpSocket.hpp \
   /home/skg/PacManCE/src/LinkedList.h \
   /home/skg/PacManCE/src/Node.h \
+  /usr/include/c++/11/fstream \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+  /usr/include/c++/11/bits/fstream.tcc \
+  /usr/include/c++/11/sstream \
+  /usr/include/c++/11/bits/sstream.tcc \
   /home/skg/PacManCE/src/Player.h \
   /home/skg/PacManCE/src/Tiles.h
 
@@ -2360,6 +2375,12 @@ CMakeFiles/PacManCE.dir/src/main.cpp.o: /home/skg/PacManCE/src/main.cpp \
 /home/skg/PacManCE/src/Tiles.h:
 
 /home/skg/PacManCE/src/Player.h:
+
+/usr/include/c++/11/sstream:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
+
+/usr/include/c++/11/fstream:
 
 /usr/include/SFML/Network/UdpSocket.hpp:
 
@@ -2450,6 +2471,8 @@ CMakeFiles/PacManCE.dir/src/main.cpp.o: /home/skg/PacManCE/src/main.cpp \
 /usr/include/SFML/Graphics/Font.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+
+/usr/include/c++/11/bits/fstream.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
@@ -2751,6 +2774,8 @@ CMakeFiles/PacManCE.dir/src/main.cpp.o: /home/skg/PacManCE/src/main.cpp \
 
 /usr/include/c++/11/debug/debug.h:
 
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
+
 /usr/include/SFML/Network/Ftp.hpp:
 
 /usr/include/c++/11/backward/binders.h:
@@ -2902,6 +2927,8 @@ CMakeFiles/PacManCE.dir/src/main.cpp.o: /home/skg/PacManCE/src/main.cpp \
 /usr/include/c++/11/vector:
 
 /usr/include/c++/11/bits/vector.tcc:
+
+/usr/include/c++/11/bits/sstream.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
