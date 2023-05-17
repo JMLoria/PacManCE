@@ -85,6 +85,36 @@ build CMakeFiles/PacManCE.dir/src/Tile.cpp.o: CXX_COMPILER__PacManCE_Debug /home
   OBJECT_DIR = CMakeFiles/PacManCE.dir
   OBJECT_FILE_DIR = CMakeFiles/PacManCE.dir/src
 
+build CMakeFiles/PacManCE.dir/src/Test-JM/testConection.cpp.o: CXX_COMPILER__PacManCE_Debug /home/franco/pac-man/PacManCE/src/Test-JM/testConection.cpp || cmake_object_order_depends_target_PacManCE
+  DEP_FILE = CMakeFiles/PacManCE.dir/src/Test-JM/testConection.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/PacManCE.dir
+  OBJECT_FILE_DIR = CMakeFiles/PacManCE.dir/src/Test-JM
+
+build CMakeFiles/PacManCE.dir/src/GameOverState.cpp.o: CXX_COMPILER__PacManCE_Debug /home/franco/pac-man/PacManCE/src/GameOverState.cpp || cmake_object_order_depends_target_PacManCE
+  DEP_FILE = CMakeFiles/PacManCE.dir/src/GameOverState.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/PacManCE.dir
+  OBJECT_FILE_DIR = CMakeFiles/PacManCE.dir/src
+
+build CMakeFiles/PacManCE.dir/src/Pellet.cpp.o: CXX_COMPILER__PacManCE_Debug /home/franco/pac-man/PacManCE/src/Pellet.cpp || cmake_object_order_depends_target_PacManCE
+  DEP_FILE = CMakeFiles/PacManCE.dir/src/Pellet.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/PacManCE.dir
+  OBJECT_FILE_DIR = CMakeFiles/PacManCE.dir/src
+
+build CMakeFiles/PacManCE.dir/src/LinkedList.cpp.o: CXX_COMPILER__PacManCE_Debug /home/franco/pac-man/PacManCE/src/LinkedList.cpp || cmake_object_order_depends_target_PacManCE
+  DEP_FILE = CMakeFiles/PacManCE.dir/src/LinkedList.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/PacManCE.dir
+  OBJECT_FILE_DIR = CMakeFiles/PacManCE.dir/src
+
+build CMakeFiles/PacManCE.dir/src/Node.cpp.o: CXX_COMPILER__PacManCE_Debug /home/franco/pac-man/PacManCE/src/Node.cpp || cmake_object_order_depends_target_PacManCE
+  DEP_FILE = CMakeFiles/PacManCE.dir/src/Node.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/PacManCE.dir
+  OBJECT_FILE_DIR = CMakeFiles/PacManCE.dir/src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target PacManCE
@@ -93,7 +123,7 @@ build CMakeFiles/PacManCE.dir/src/Tile.cpp.o: CXX_COMPILER__PacManCE_Debug /home
 #############################################
 # Link the executable PacManCE
 
-build PacManCE: CXX_EXECUTABLE_LINKER__PacManCE_Debug CMakeFiles/PacManCE.dir/src/main.cpp.o CMakeFiles/PacManCE.dir/src/PlayState.cpp.o CMakeFiles/PacManCE.dir/src/MainMenuState.cpp.o CMakeFiles/PacManCE.dir/src/Player.cpp.o CMakeFiles/PacManCE.dir/src/Enemy.cpp.o CMakeFiles/PacManCE.dir/src/Tile.cpp.o | /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-audio.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
+build PacManCE: CXX_EXECUTABLE_LINKER__PacManCE_Debug CMakeFiles/PacManCE.dir/src/main.cpp.o CMakeFiles/PacManCE.dir/src/PlayState.cpp.o CMakeFiles/PacManCE.dir/src/MainMenuState.cpp.o CMakeFiles/PacManCE.dir/src/Player.cpp.o CMakeFiles/PacManCE.dir/src/Enemy.cpp.o CMakeFiles/PacManCE.dir/src/Tile.cpp.o CMakeFiles/PacManCE.dir/src/Test-JM/testConection.cpp.o CMakeFiles/PacManCE.dir/src/GameOverState.cpp.o CMakeFiles/PacManCE.dir/src/Pellet.cpp.o CMakeFiles/PacManCE.dir/src/LinkedList.cpp.o CMakeFiles/PacManCE.dir/src/Node.cpp.o | /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-audio.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
   FLAGS = -g
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-audio.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
   OBJECT_DIR = CMakeFiles/PacManCE.dir

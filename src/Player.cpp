@@ -17,15 +17,19 @@ void Player::initShape(int x, int y){
 void Player::initTexture(){
 
     // Loading texture from file
-    if(this->textureSheet.loadFromFile("file name")){
+    if(!this->textureSheet.loadFromFile("/home/franco/pac-man/PacManCE/assets/images/pacman.png")){
 
         std::cout << "ERROR::PLAYER::INITTEXTURE:: Could not load sprite" << std::endl;
     }
 }
 
-void Player::initSprite(){
+void Player::initSprite(int x, int y){
 
     this->sprite.setTexture(this->textureSheet);
+    this->sprite.setTextureRect(IntRect(0, 0, 16, 16));
+
+    this->sprite.setPosition(x, y);
+    this->sprite.setScale(3.f, 3.f);
 }
 
 /*
@@ -37,11 +41,11 @@ void Player::initSprite(){
 Player::Player(int x, int y){
 
     // Debugging stuff
-    this->initShape(x, y);
+    // this->initShape(x, y);
 
     // sets up the sprites of the character
     this->initTexture();
-    this->initSprite();
+    this->initSprite(x, y);
 }
 
 Player::~Player(){
@@ -60,5 +64,5 @@ void Player::update()
 
 void Player::draw(RenderTarget *target){
 
-    target->draw(this->rect);
+    target->draw(this->sprite);
 }
