@@ -166,7 +166,7 @@
             android:layout_marginStart="12dp"
             android:layout_marginBottom="12dp"
             android:ems="10"
-            android:inputType="number"
+            android:inputType="text"
             app:layout_constraintBottom_toTopOf="@+id/btnConnect"
             app:layout_constraintStart_toStartOf="parent" />
 

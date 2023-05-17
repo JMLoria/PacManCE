@@ -7,6 +7,6 @@ private:
 
 public:
 
-}
+};
 
 #endif //PACMANCE_PELLET_H
