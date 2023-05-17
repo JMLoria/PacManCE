@@ -74,16 +74,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onSensorChanged(SensorEvent _event) {
                 float X = _event.values[0], Z = _event.values[2];
-                if (X < -4) {
+                if (X < -5) {
                     move = "D";
                     txtTest.setText(move);
-                } else if (X > 4) {
+                } else if (X > 5) {
                     move = "A";
                     txtTest.setText(move);
-                } else if (Z < -6) {
+                } else if (Z < -5) {
                     move = "S";
                     txtTest.setText(move);
-                } else if (Z > 6) {
+                } else if (Z > 5) {
                     move = "W";
                     txtTest.setText(move);
                 }
