@@ -169,6 +169,16 @@
             android:inputType="number"
             app:layout_constraintBottom_toTopOf="@+id/btnConnect"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtIPTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingrese dirección IP"
+            app:layout_constraintBottom_toBottomOf="@+id/btnConnect"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnConnect"
+            app:layout_constraintTop_toTopOf="@+id/editIP" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
